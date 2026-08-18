@@ -1,0 +1,60 @@
+* {
+  background-color: azure;
+}
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: transparent;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='rgba%28100, 100, 100, .8%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m5 3 5 5-5 5'/%3E%3C/svg%3E");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded='true']::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.profile {
+  margin-left: 500px;
+}
+
+.login-card {
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.todoLists {
+  margin-bottom: 1000px;
+  margin-left: 0.5rem;
+  width: 70%;
+}
+
+.register-form {
+  width: 100%;
+  margin-top: 7%;
+  padding: 5%;
+}
