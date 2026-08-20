@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Header />
-    <div>
+    <div className="app-layout">
       <NavBar />
       <TodoList />
     </div>
