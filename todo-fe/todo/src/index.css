@@ -48,13 +48,22 @@
 }
 
 .todoLists {
-  margin-bottom: 1000px;
-  margin-left: 0.5rem;
-  width: 70%;
+ width: 100%;
+ margin: 0;
 }
 
 .register-form {
   width: 100%;
   margin-top: 7%;
   padding: 5%;
+}
+
+.app-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.todo-list-container {
+  flex: 1;
+  padding: 0.5rem 1rem; /* small intentional spacing */
 }
